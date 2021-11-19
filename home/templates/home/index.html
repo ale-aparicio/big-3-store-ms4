@@ -1,10 +1,56 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block content %}
-    <div class="container">
+{% block page_header %}
+    <div class="container header-contianer">
         <div class="row">
-            
+            <div class="col"></div>
         </div>
     </div>
+{% endblock %}
+
+{% block content %}
+<div class="row">
+     <div class="col-12 p-0">
+        <img src="big_3_banner.jpg" alt="Big 3 Banner" class=" main-banner col-12">
+    </div>
+</div>
+<br>
+<div class="container h-100">
+    <div class=" h-100">
+        
+        <div class="col-10 col-md-12 my-auto">
+            <h2 class="display-4 logo-font text-black text-center">
+             Who are the Big 3?
+            </h2>
+            <br>
+            <h4 class="description">The Big Three refers to three very long and very popular anime, Naruto, Bleach and One Piece. The Big
+                Three was a term used to describe the three most popular running series during their golden age in
+                Jump's mid 2000s period.
+                <br>
+                <br>
+                Here you can find all type of merchandise including apparel, figures, and props of each of the
+                respective 3 animes!</p>
+            <div class="my-5">
+                <h4>
+                    <a href="" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
+                </h4>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4 p-0">
+            <a href="" class="anime-card"><img class="card-img-top" src="bleach_card.png" alt="Card image"></a>
+            <h2 class="logo-font text-black text-center">Bleach</h2>
+        </div>
+        <div class="col-4 p-0">
+            <a href="" class="anime-card"><img class="card-img-top" src="one_piece_card.png" alt="Card image"></a>
+            <h3 class="logo-font text-black text-center">One Piece</h3>
+        </div>
+        <div class="col-4 p-0">
+            <a href="" class="anime-card"><img class="card-img-top" src="naruto-card.png" alt="Card image"></a>
+            <h3 class="logo-font text-black text-center">Naruto</h3>
+        </div>
+    </div>
+</div>
 {% endblock %}
