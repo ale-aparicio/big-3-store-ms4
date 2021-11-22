@@ -150,6 +150,11 @@ a {
 .text-primary {
     color: rgb(185, 51, 51) !important;
 }
+
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
 /* --------------------------------- Media queries */
 
 /* Slightly larger container on xl screens */
