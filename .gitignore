@@ -9,3 +9,6 @@ node_modules/
 *splite3
 *.pyc 
 __pycache__
+
+export STRIPE_PUBLIC_KEY=pk_test_51JjkFdBcl3k8zAkhxIUf36i9JFHb1JwWQva2Vn3zAmR9v6kq5e8peR7zLvIz3DDCwHGHmohlaPzSugGTMrAHOegl00LLuyjXhI
+export STRIPE_SECRET_KEY=sk_test_51JjkFdBcl3k8zAkhwdtLwCdonHQdEb76KF5OIlTSaJrocw8R49cxHAcl0BbFSEvl9mTsvAkiVa7kSCEFrAFMmxo000jcs4rt43
