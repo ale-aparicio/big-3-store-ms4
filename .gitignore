@@ -7,8 +7,9 @@ __pycache__/
 node_modules/
 .github/
 *splite3
-*.pyc 
+*.pyc
 __pycache__
 
 export STRIPE_PUBLIC_KEY=pk_test_51JjkFdBcl3k8zAkhxIUf36i9JFHb1JwWQva2Vn3zAmR9v6kq5e8peR7zLvIz3DDCwHGHmohlaPzSugGTMrAHOegl00LLuyjXhI
 export STRIPE_SECRET_KEY=sk_test_51JjkFdBcl3k8zAkhwdtLwCdonHQdEb76KF5OIlTSaJrocw8R49cxHAcl0BbFSEvl9mTsvAkiVa7kSCEFrAFMmxo000jcs4rt43
+export STRIPE_WH_SECRET=whsec_GzMvNeDVLoRv2xC5pCbE6AcgxFWESg3Z
