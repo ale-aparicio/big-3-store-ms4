@@ -239,7 +239,7 @@ input[name='q']::placeholder {
 
 .allauth-form-inner-content input {
     border-color: #000;
-    border-radius: 0;
+    border-radius: 5px;
 }
 
 .allauth-form-inner-content label:not([for='id_remember']) {
@@ -267,7 +267,7 @@ input[name='q']::placeholder {
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
-    border-radius: 0;
+    border-radius: 5px;
 
     /* standard bootstrap btn transitions */
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
@@ -303,10 +303,6 @@ input[name='q']::placeholder {
           left: 0;
           z-index: 1030;
       }
-  
-      .header-container {
-          padding-top: 164px;
-      }
 
       .anime-card:hover{
         position:relative;
@@ -325,9 +321,6 @@ input[name='q']::placeholder {
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
-    .header-container {
-        padding-top: 116px;
-    }
 
     body {
         height: calc(100vh - 116px);
