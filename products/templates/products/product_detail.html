@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+ {% extends "base.html" %}
 {% load static %}
 
 {% block page_header %}
@@ -45,7 +45,7 @@
                             {% if s %}
                                 <div class="col-12">
                                     <p><strong>Size:</strong></p>
-                                    <select class="form-control rounded-0 w-50" name="product_size" id='id_product_size'>
+                                    <select class="form-control rounded-5 w-50" name="product_size" id='id_product_size'>
                                         <option value="xs">XS</option>
                                         <option value="s">S</option>
                                         <option value="m" selected>M</option>
@@ -91,12 +91,23 @@
                     </form>
                 </div>
             </div>
-            
             <div class="col-12 text-center">
                 <h4>
                     <a href="{% url 'products' %}" class="back-button btn btn-lg text-uppercase py-3"><i class="fas fa-long-arrow-alt-left"></i>  Back to All Products</a>
                 </h4>
             </div>
+        </div>
+        <hr class="w-50">
+        <div class="text-center">
+            <h2 class="logo-font">Reviews</h2>
+            <hr class="w-50 mb-1">
+        </div>
+        <div class="row">
+            <form action="review-form" method="GET" action="/rate">
+                {% for product in products %}
+                    <input type="hidden" name="product_id" id="product_id" value="{{ product.id }}">
+                {% endfor %}
+            </form>
         </div>
     </div>
 {% endblock %}

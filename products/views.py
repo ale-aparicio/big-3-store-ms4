@@ -137,3 +137,27 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+
+def Rate(request, product_id):
+    product = Product.objects.get(product_id)
+    user = request.user
+
+    if request.method == 'POST':
+	    form = RateForm(request.POST)
+	    if form.is_valid():
+		    rate = form.save(commit=False)
+		    rate.user = user
+		    rate.product = product
+		    rate.save()
+		    return HttpResponseRedirect(reverse('product-detail', args=[product_id]))
+    else:
+        form = RateForm()
+
+    template = 'products/rate.html'
+
+    context = {
+	    'form': form,
+	    'product': product,
+	}
+
+    return render(context, request)
