@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.core.validators import MaxValueValidator, MinValueValidator
 
 
 class Category(models.Model):
@@ -32,22 +33,22 @@ class Product(models.Model):
         return self.name
 
 
-RATE_CHOICES = [
-	(1, '1'),
-	(2, '2'),
-	(3, '3'),
-	(4, '4'),
-	(5, '5'),
-]
-
 class Review(models.Model):
-	user = models.ForeignKey(User, on_delete=models.CASCADE)
-	product = models.ForeignKey(Product, on_delete=models.CASCADE)
-	date = models.DateTimeField(auto_now_add=True)
-	text = models.TextField(max_length=3000, blank=True)
-	rate = models.PositiveSmallIntegerField(choices=RATE_CHOICES)
-	likes = models.PositiveIntegerField(default=0)
-	unlikes = models.PositiveIntegerField(default=0)
+    """
+    A model for product reviews.
+    """
+    product = models.ForeignKey(
+        'Product', null=True, blank=True,
+        related_name='reviews', on_delete=models.SET_NULL
+    )
+    user = models.ForeignKey(
+        User, on_delete=models.CASCADE, null=True, blank=True)
+    rating = models.IntegerField(
+        null=True, blank=False,
+        validators=[MinValueValidator(0), MaxValueValidator(5)]
+    )
+    review = models.TextField(null=True, blank=False)
+    date = models.DateTimeField(auto_now_add=True)
 
-	def __str__(self):
-		return self.user.username
+    def __str__(self):
+        return self.user.username + ", " + str(self.product)
