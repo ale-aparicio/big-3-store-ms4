@@ -61,7 +61,7 @@
                             {% if from_profile %}
                             <!-- Back To Profile -->
                             <a href="{% url 'profile' %}"
-                                class="border-black btn btn-lg text-uppercase py-3">
+                                class="border-black btn btn-lg text-uppercase">
                                 Back To Profile
                             </a>
                             {% else %}
@@ -78,4 +78,9 @@
         </div>
     </div>
 </div>
+{% endblock %}
+
+{% block extrapostloadjs %}
+<!-- Link to Products JavaScript -->
+<script src="{% static 'products/js/products.js' %}"></script>
 {% endblock %}

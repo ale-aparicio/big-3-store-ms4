@@ -277,6 +277,7 @@ def review_product(request, product_id):
     # Render Product review page
     return render(request, template, context)
 
+
 @login_required
 def delete_review(request, product_id, user_id):
     """ Delete an existing Review """

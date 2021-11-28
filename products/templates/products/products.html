@@ -72,7 +72,14 @@
                                             </p>
                                         {% endif %}
                                             {% if product.rating %}
-                                                <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
+                                                <!-- Rating -->
+                                                <span id="product-rating-stars_{{ product_review.id }}" class="product-rating-stars text-center px-1" data-product-rating="{{ product_review.rating}}">
+                                                    <i id="{{ product_review.id }}_star-1" class="fas fa-star fa-sm"></i>
+                                                    <i id="{{ product_review.id }}_star-2" class="fas fa-star fa-sm"></i>
+                                                    <i id="{{ product_review.id }}_star-3" class="fas fa-star fa-sm"></i>
+                                                    <i id="{{ product_review.id }}_star-4" class="fas fa-star fa-sm"></i>
+                                                    <i id="{{ product_review.id }}_star-5" class="fas fa-star fa-sm"></i>
+                                                </span>
                                             {% else %}
                                                 <small class="text-muted">No Rating</small>
                                             {% endif %}
@@ -138,4 +145,9 @@
             }
         })
     </script>
+{% endblock %}
+
+{% block extrapostloadjs %}
+<!-- Link to Products JavaScript -->
+<script src="{% static 'products/js/products.js' %}"></script>
 {% endblock %}
