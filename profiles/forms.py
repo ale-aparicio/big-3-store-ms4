@@ -1,5 +1,5 @@
 from django import forms
-from .models import UserProfile
+from .models import UserProfile, Suggestion
 
 
 class UserProfileForm(forms.ModelForm):
@@ -32,3 +32,42 @@ class UserProfileForm(forms.ModelForm):
                 self.fields[field].widget.attrs['placeholder'] = placeholder
             self.fields[field].widget.attrs['class'] = 'border-black rounded-5 profile-form-input'
             self.fields[field].label = False
+
+class SuggestionForm(forms.ModelForm):
+    """
+    A form for Reviews.
+    """
+    class Meta:
+        # Set model
+        model = Suggestion
+        # Set field names
+        fields = ('suggestion',)
+        # Set field labels
+        labels = {
+            'suggestion': 'Suggestion',
+        }
+
+    def __init__(self, *args, **kwargs):
+        """
+        Add placeholders and classes
+        """
+        super().__init__(*args, **kwargs)
+        # Set placeholders
+        placeholders = {
+            'suggestion': 'Suggestion',
+        }
+        # Set autofocus to review field
+        self.fields['suggestion'].widget.attrs['autofocus'] = True
+        # Loop through fields, add placeholders
+        for field_name, placeholder in placeholders.items():
+            # Add a * to placeholder if field is required
+            if self.fields[field_name].required:
+                placeholder_text = placeholder + "*"
+            else:
+                placeholder_text = placeholder
+            # Set placeholder
+            self.fields[field_name].widget.attrs[
+                'placeholder'] = placeholder_text
+            # Add review-input class
+            self.fields[field_name].widget.attrs[
+                'class'] = 'review-input'

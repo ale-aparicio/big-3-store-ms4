@@ -33,3 +33,13 @@ def create_or_update_user_profile(sender, instance, created, **kwargs):
         UserProfile.objects.create(user=instance)
     # Existing users: just save the profile
     instance.userprofile.save()
+
+class Suggestion(models.Model):
+    """
+    A model for Suggestion Functionality.
+    """ 
+    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
+    suggestion = models.TextField(null=True, blank=False)
+
+    def __str__(self):
+        return self.user.username
