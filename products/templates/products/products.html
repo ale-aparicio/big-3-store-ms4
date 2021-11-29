@@ -73,13 +73,13 @@
                                         {% endif %}
                                             {% if product.rating %}
                                                 <!-- Rating -->
-                                                <span id="product-rating-stars_{{ product_review.id }}" class="product-rating-stars text-center px-1" data-product-rating="{{ product_review.rating}}">
-                                                    <i id="{{ product_review.id }}_star-1" class="fas fa-star fa-sm"></i>
-                                                    <i id="{{ product_review.id }}_star-2" class="fas fa-star fa-sm"></i>
-                                                    <i id="{{ product_review.id }}_star-3" class="fas fa-star fa-sm"></i>
-                                                    <i id="{{ product_review.id }}_star-4" class="fas fa-star fa-sm"></i>
-                                                    <i id="{{ product_review.id }}_star-5" class="fas fa-star fa-sm"></i>
-                                                </span>
+                                                <div id="product-rating-stars-{{ product.id }}" class="product-rating-stars" data-product-rating="{{ product.rating }}">
+                                                    <i id="{{ product.id }}_star-1" class="fas fa-star"></i>
+                                                    <i id="{{ product.id }}_star-2" class="fas fa-star"></i>
+                                                    <i id="{{ product.id }}_star-3" class="fas fa-star"></i>
+                                                    <i id="{{ product.id }}_star-4" class="fas fa-star"></i>
+                                                    <i id="{{ product.id }}_star-5" class="fas fa-star"></i>
+                                                </div>
                                             {% else %}
                                                 <small class="text-muted">No Rating</small>
                                             {% endif %}

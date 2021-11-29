@@ -65,7 +65,7 @@ def product_detail(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
     # Get Product Reviews
     product_reviews = Review.objects.filter(
-        product=product).order_by("-rating")[:10]
+        product=product).order_by("-rating")[:5]
     user_review = None
     # If user is authenticated, get User Review
     if request.user.is_authenticated:
@@ -182,33 +182,10 @@ def review_product(request, product_id):
                 review.user = request.user
                 # Save review
                 review.save()
-                # Get review offer if it exists and apply it to Reward
-                review_offer = Offer.objects.filter(
-                    description="Review").first()
-                if review_offer:
-                    # Get User Reward
-                    reward = Reward.objects.filter(user=request.user).first()
-                    # If Reward exists
-                    if reward:
-                        # Set discount
-                        reward.discount = review_offer.discount
-                        reward.save()
-                        discount = round(review_offer.discount, 0)
-                        rewardstr = f'Thanks for being a great customer - \
-                            you have earned {discount}% \
-                            off your next order!'
-                    else:
-                        # Create reward object
-                        reward = Reward(
-                            user=request.user,
-                            discount=review_offer.discount)
-                        reward.save()
-                        rewardstr = ""
                 # Success message
                 messages.success(
                     request,
-                    f'Review added for product: {product.friendly_name}.\
-                    {rewardstr}',
+                    f'Review added for product: {product.name}.',
                     extra_tags='admin'
                 )
             else:
@@ -217,7 +194,7 @@ def review_product(request, product_id):
                 # Success messsage
                 messages.success(
                     request,
-                    f'Review updated for product: {product.friendly_name}.',
+                    f'Review updated for product: {product.name}.',
                     extra_tags='admin'
                 )
             # Redirect to Product detial page

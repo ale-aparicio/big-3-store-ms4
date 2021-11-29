@@ -14,7 +14,6 @@ $('.product-rating-stars').each(function () {
     }
 });
 
-
 /* On click event handlers added to product review edit stars */
 /* Note, updates the hidden form input rating with the selected rating */
 $('.product-review-edit-stars').each(function () {
@@ -31,7 +30,6 @@ $('.product-review-edit-stars').each(function () {
         });
     });
 });
-
 
 // On click event handler added to review delete buttons to build delete confirmation modal dialog
 $('.reviewDeleteBtn').each(function () {

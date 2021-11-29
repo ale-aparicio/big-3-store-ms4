@@ -160,7 +160,10 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
-
+/*-- Yellow Foreground --*/
+.fg-yellow {
+    color: #ffcd3c;
+}
 
 /* ------------------------------- bootstrap toasts */
 
