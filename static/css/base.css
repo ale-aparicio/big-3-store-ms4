@@ -1,3 +1,4 @@
+/* Special Classes */
 html {
     height: 100%;
 }
@@ -20,6 +21,11 @@ a {
 .pb-20 {
     padding-bottom: 20px;
 }
+
+.box-shadow {
+    box-shadow: 10px 10px 5px grey;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;

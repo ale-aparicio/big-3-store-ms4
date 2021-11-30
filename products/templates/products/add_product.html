@@ -10,6 +10,7 @@
 {% endblock %}
 
 {% block content %}
+    <!-- Add Product -->
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
@@ -20,7 +21,7 @@
                 <hr>
             </div>
         </div>
-
+        <!-- Add Product Form -->
         <div class="row">
             <div class="col-12 col-md-6">
                 <form method="POST" action="{% url 'add_product' %}" class="form mb-2" enctype="multipart/form-data">
@@ -32,6 +33,7 @@
                             {{ field }}
                         {% endif %}
                     {% endfor %}
+                    <!-- Navigation Buttons -->
                     <div class="text-right">
                         <a class="btn btn-outline-black rounded-5" href="{% url 'products' %}">Cancel</a>
                         <button class="btn btn-black rounded-5" type="submit">Add Product</button>
@@ -44,6 +46,7 @@
 
 {% block postloadjs %}
     {{ block.super }}
+    <!-- Add Image Function -->
     <script type="text/javascript">
         $('#new-image').change(function() {
             var file = $('#new-image')[0].files[0];

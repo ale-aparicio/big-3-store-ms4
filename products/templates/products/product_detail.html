@@ -6,9 +6,11 @@
 {% endblock %}
 
 {% block content %}
+    <!-- Product Details -->
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+                <!-- Product Image -->
                 <div class="image-container my-5">
                     {% if product.image %}
                         <a href="{{ product.image.url }}" target="_blank">
@@ -22,6 +24,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
+                <!-- Product Name -->
                 <div class="product-details-container mb-5 mt-md-5">
                     <h2 class="mb-0">{{ product.name }}</h2>
                     <h3 class="mb-0 text-left font-weight-bold">${{ product.price }}</h3>
@@ -44,10 +47,12 @@
                     {% else %}
                         <h4 class="text-muted">No Rating</h4>
                     {% endif %}
+                    <!-- Product Description -->
                     <p class="mt-3">{{ product.description }}</p>
                     <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
                         {% csrf_token %}
                         <div class="form-row">
+                            <!-- Product Sizes -->
                             {% with product.has_sizes as s %}
                             {% if s %}
                                 <div class="col-12">
@@ -62,6 +67,7 @@
                                 </div>
                             {% endif %}
                             <div class="col-12">
+                                <!-- Quantity Chooser -->
                                 <p class="mt-3"><strong>Quantity:</strong></p>
                                 <div class="form-group w-50">
                                     <div class="input-group">
@@ -88,7 +94,7 @@
                                     </div>
                                 </div>
                             </div>
-
+                            <!--  Add to bag btn -->
                             <div class="col-12">
                                 <input type="submit" class="btn btn-black rounded-10 text-uppercase mt-5" value="Add to Bag">
                             </div>
@@ -99,20 +105,24 @@
                 </div>
             </div>
             <div class="col-12 text-center">
+                <!-- Btn to Redirect back to the Products Page -->
                 <h4>
                     <a href="{% url 'products' %}" class="back-button btn btn-lg text-uppercase py-3"><i class="fas fa-long-arrow-alt-left"></i>  Back to All Products</a>
                 </h4>
             </div>
         </div>
         <hr class="w-50">
+        <!-- Reviews -->
         <div class="text-center">
             <h2 class="logo-font">Reviews</h2>
             <hr class="w-50 mb-1">
         </div>
         <br>
+        <!-- Product review -->
         {% if product_reviews %}
             {% for product_review in product_reviews %}
                 <div class="col-12 w-30">
+                    <!-- Btn that redirects to the ReviewForm -->
                     {% if request.user.is_authenticated %}
                         <a href="{% url 'review_product' product.id %}" class="back-button btn rounded-10">Write a Review!</a>
                     {% else %}
@@ -121,9 +131,22 @@
                 </div>
                 <br>
                 <div class="col-12 justify-content-center">
+                    <!-- Displays the user that submitted the review -->
                     <div class="card">
                         <div class="card-header">
                             {{ product_review.user.username }}
+                            {% if request.user.is_superuser %}
+                                    <!-- Delete Review -->
+                                    <span>
+                                        <a id="reviewDeleteBtn{{product_review.user.id}}" href="#" role="button"
+                                            class="text-black reviewDeleteBtn link-small px-1"
+                                            data-confirm-modal-title="Delete"
+                                            data-confirm-modal-content="Do you really want to delete {{product_review.user.username}} review for {{product.friendly_name}}?"
+                                            data-confirm-modal-link="{% url 'delete_review' product.id product_review.user.id %}">
+                                            Delete
+                                        </a>
+                                    </span>
+                                {% endif %}
                         </div>
                         <div class="card-body">
                         <blockquote class="blockquote mb-0">
@@ -137,6 +160,7 @@
                             </span>
                             <br>
                             <br>
+                            <!-- Product Review Text -->
                             <p>{{ product_review.review }}</p>
                         </blockquote>
                         </div>

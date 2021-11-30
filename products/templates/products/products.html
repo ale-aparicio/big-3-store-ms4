@@ -10,6 +10,7 @@
 {% endblock %}
 
 {% block content %}
+<!-- Products Page -->
 <div class="container-fluid">
     <div class="row">
         <div class="col text-center mt-3">
@@ -22,6 +23,7 @@
             <div class="row mt-1 mb-2">
                 <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
                     <div class="sort-select-wrapper w-50">
+                        <!-- Sort Selector  -->
                         <select id="sort-selector" class="custom-select custom-select-sm rounded-10 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
                             <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
                             <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price (low to high)</option>
@@ -36,18 +38,22 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6 order-md-first">
+                    <!-- If page is a category >> btn to take the user back to the Profiles Page -->
                     <p class="text-muted mt-3 text-center text-md-left">
                         {% if search_term or current_categories or current_sorting != 'None_None' %}
-                            <span class="small"><a href="{% url 'products' %}">Products Home</a> | </span>
+                            <span class="smalllogo-font"><a href="{% url 'products' %}" class=" text-black ">Products Home</a> | </span>
                         {% endif %}
+                        <!-- Displays how many products are available -->
                         {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
                     </p>
                 </div>
             </div>
             <div class="row pb-20">
+                <!-- ProductFrom -->
                 {% for product in products %}
                     <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                         <div class="card h-100 border-0">
+                            <!-- Product Image -->
                             {% if product.image %}
                             <a href="{% url 'product_detail' product.id %}">
                                 <img class="card-img-top img-fluid product-img" src="{{ product.image.url }}" alt="{{ product.name }}">
@@ -57,13 +63,16 @@
                                 <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                             </a>
                             {% endif %}
+                            <!-- Product Name -->
                             <div class="card-body pb-0">
                                 <p class="mb-0">{{ product.name }}</p>
                             </div>
                             <div class="card-footer bg-white pt-0 border-0 text-left">
                                 <div class="row">
                                     <div class="col">
+                                        <!-- Product Price -->
                                         <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
+                                        <!-- Product Category -->
                                         {% if product.category %}
                                             <p class="small mt-1 mb-0">
                                                 <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
@@ -71,8 +80,8 @@
                                                 </a>
                                             </p>
                                         {% endif %}
+                                            <!-- Rating -->
                                             {% if product.rating %}
-                                                <!-- Rating -->
                                                 <div id="product-rating-stars-{{ product.id }}" class="product-rating-stars" data-product-rating="{{ product.rating }}">
                                                     <i id="{{ product.id }}_star-1" class="fas fa-star"></i>
                                                     <i id="{{ product.id }}_star-2" class="fas fa-star"></i>
@@ -83,6 +92,7 @@
                                             {% else %}
                                                 <small class="text-muted">No Rating</small>
                                             {% endif %}
+                                            <!-- Edit and Delete Btns -->
                                             {% if request.user.is_superuser %}
                                                 <small class="ml-3">
                                                     <a href="{% url 'edit_product' product.id %}">Edit</a> | 
@@ -94,6 +104,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Display For Loops -->
                         {% if forloop.counter|divisibleby:1 %}
                             <div class="col-12 d-sm-none mb-5">
                                 <hr>
@@ -123,6 +134,7 @@
 
 {% block postloadjs %}
     {{ block.super }}
+    <!-- JS foor the Sort Selector  -->
     <script type="text/javascript">
         $('#sort-selector').change(function() {
             var selector = $(this);

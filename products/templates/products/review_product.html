@@ -3,6 +3,7 @@
 
 
 {% block content %}
+<!-- Product ReviewForm -->
 <div class="row">
     <div class="col text-center mt-3">
         <h2 class="logo-font">Product Review</h2>
@@ -12,6 +13,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+            <!-- Product Image -->
             <div class="image-container my-5">
                 {% if product.image %}
                     <a href="{{ product.image.url }}" target="_blank">
@@ -25,6 +27,7 @@
             </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4">
+            <!-- Product Name -->
             <div class="product-details-container mt-5">
                 <h2 class="mb-0">{{ product.name }}</h2>
             </div>

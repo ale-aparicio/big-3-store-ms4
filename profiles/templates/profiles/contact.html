@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+<div class="row">
+    <div class="col text-center mt-3">
+        <h2 class="logo-font">Suggestions</h2>
+        <hr class="w-50 mb-1">
+    </div>
+</div>
+<br>
+<div class="container-fluid">
+    <form class="form-user" action="" method="POST" id="contact-form">
+        {% csrf_token %}
+        <fieldset class="pt-2 px-2">
+            {{ contact_form | crispy }}
+        </fieldset>
+        <!-- Navigation Buttons -->
+        <div class="row">
+            <!-- Send Message -->
+            <div class="col-sm-12 col-md-6 text-center">
+                <div class="py-2">
+                    <button type="submit" id="contact-form-submit-button"
+                        class="btn  btn-lg back-button rounded-10">
+                        Send Message
+                    </button>
+                </div>
+            </div>
+            <!-- Keep Shopping -->
+            <div class="col-sm-12 col-md-6 text-center">
+                <div class="py-2">
+                    <a href="{% url 'products' %}"
+                        class="btn  btn-lg back-button rounded-10">
+                        Keep Shopping
+                    </a>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock %}

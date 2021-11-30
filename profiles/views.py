@@ -1,8 +1,9 @@
 from django.shortcuts import render, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from .models import UserProfile, Suggestion
-from .forms import UserProfileForm, SuggestionForm
+from django.contrib.auth.models import User
+from .models import UserProfile
+from .forms import UserProfileForm, ContactForm
 
 from checkout.models import Order
 
@@ -49,25 +50,62 @@ def order_history(request, order_number):
 
     return render(request, template, context)
 
-@login_required
-def suggestion(request):
-    """ Display the Suggestions Form """
-    profile = get_object_or_404(UserProfile, user=request.user)
+def contact(request):
+    """ A view to return the contact page """
 
+    contact_email_sent = False
     if request.method == 'POST':
-        form = SuggestionForm(request.POST, instance=profile)
-        if form.is_valid():
-            form.save()
-            messages.success(request, 'Suggestion Sucessfully Sent! Thank you for your feedback!')
-        else:
-            messages.error(request, 'Suggestion Failed, please try again.')
-    else:
-        form = SuggestionForm()
-    
-    template = 'profiles/suggestion.html'
-    context = {
-        'suggestion': 'Suggestion',
-    }
+        # Instantiate COntactForm from POST data
+        contact_form = ContactForm(
+            request.POST)
+        # Check if form is valid
+        if contact_form.is_valid():
+            # Get email, subject and message from cleaned form data
+            email = (contact_form.cleaned_data['from_email'])
+            subject = (contact_form.cleaned_data['subject'])
+            contact_message = (contact_form.cleaned_data['message'])
+            # Instantiate EmailMessage object from cleaned form data
+            email = EmailMessage(
+                subject,
+                contact_message,
+                email,
+                [settings.DEFAULT_FROM_EMAIL],
+                reply_to=[email],
+            )
+            # Try to send email
+            try:
+                email.send(fail_silently=False)
+                # Success message
+                messages.success(
+                    request, "Contact email sent successfully.",
+                    extra_tags='admin')
+                contact_email_sent = True
+            except SMTPException as smtp_error:
+                errstr = 'Error sending contact email, ' + smtp_error
+                # Error message
+                messages.error(request, errstr, extra_tags='admin')
 
+    if contact_email_sent:
+        # Redirect to all products
+        return redirect(reverse('products'))
+    # If user is authenticated
+    if request.user.is_authenticated:
+        # Get User object
+        userobj = User.objects.get(username=request.user)
+        # Instantiate ContactForm with email address populated from User object
+        contact_form = ContactForm(initial={'from_email': userobj.email})
+    else:
+        # Instantiate blank ContactForm
+        contact_form = ContactForm
+
+    # Set template
+    template = 'profiles/contact.html'
+    # Set context
+    context = {
+        'contact_form': contact_form,
+    }
+    # Render contact page
     return render(request, template, context)
+
+
 

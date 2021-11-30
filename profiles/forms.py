@@ -1,5 +1,5 @@
 from django import forms
-from .models import UserProfile, Suggestion
+from .models import UserProfile
 
 
 class UserProfileForm(forms.ModelForm):
@@ -33,37 +33,22 @@ class UserProfileForm(forms.ModelForm):
             self.fields[field].widget.attrs['class'] = 'border-black rounded-5 profile-form-input'
             self.fields[field].label = False
 
-class SuggestionForm(forms.ModelForm):
+class ContactForm(forms.Form):
     """
-    A form for Reviews.
+    A general contact form
     """
-    class Meta:
-        # Set model
-        model = Suggestion
-        # Set field names
-        fields = ('suggestion',)
-        # Set field labels
-        labels = {
-            'suggestion': 'Suggestion',
-        }
-
-
     def __init__(self, *args, **kwargs):
+        """
+        Set placeholders
+        """
         super().__init__(*args, **kwargs)
-        # Set placeholders
-        placeholders = {
-            'suggestion': 'Suggestion',
-        }
-        
-        self.fields['suggestion'].widget.attrs['autofocus'] = True
-        for field in self.fields:
-            if field != 'default_country':
-                if self.fields[field].required:
-                    placeholder = f'{placeholders[field]} *'
-                else:
-                    placeholder = placeholders[field]
-                self.fields[field].widget.attrs['placeholder'] = placeholder
-            self.fields[field].widget.attrs['class'] = 'border-black rounded-5 profile-form-input'
-            self.fields[field].label = False
+        self.fields['from_email'].widget.attrs['placeholder'] = 'Email'
+        self.fields['subject'].widget.attrs['placeholder'] = 'Subject'
+        self.fields['message'].widget.attrs['placeholder'] = 'Message'
+
+    from_email = forms.EmailField(required=True, max_length=254, label='Email')
+    subject = forms.CharField(required=True, max_length=100)
+    message = forms.CharField(required=True, widget=forms.Textarea)
+
 
     
