@@ -1,0 +1,812 @@
+[
+{
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+      "category": 2,
+      "sku": "Ble/Sle/Bla",
+      "name": "Bleach Espada Sleeve Shirt",
+      "description": "Bleach Sleeve Shirt, Black, 100% Cotton",
+      "has_sizes": true,
+      "price": "40.00",
+      "rating": "5.00",
+      "image_url": null,
+      "image": "espada-sleeve-shirt_8r8R7SO.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 2,
+    "fields": {
+      "category": 2,
+      "sku": "Ich/Shi/Red",
+      "name": "Bleach Ichigo Shirt",
+      "description": "Ichigo Shirt, Red, 100% Cotton",
+      "has_sizes": true,
+      "price": "30.00",
+      "rating": "5.00",
+      "image_url": null,
+      "image": "ichigo-shirt.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+      "category": 2,
+      "sku": "Nel/Shi/Gre",
+      "name": "Bleach Nelliel Shirt",
+      "description": "Nelliel Shirt, Grey, 100% Cotton",
+      "has_sizes": true,
+      "price": "30.00",
+      "rating": "5.00",
+      "image_url": null,
+      "image": "nelliel-shirt.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 4,
+    "fields": {
+      "category": 2,
+      "sku": "Ori/Hoo/Yel",
+      "name": "Bleach Orihime Hoodie",
+      "description": "Orihimi Hoodie, Yellow, 100% Cotton",
+      "has_sizes": true,
+      "price": "60.00",
+      "rating": "5.00",
+      "image_url": null,
+      "image": "orihime-hoodie.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 5,
+    "fields": {
+      "category": 2,
+      "sku": "Tos/Shi/Bla",
+      "name": "Bleach Toshiro Shirt",
+      "description": "Toshiro Shirt, Black, 100% Cotton",
+      "has_sizes": true,
+      "price": "30.00",
+      "rating": "5.00",
+      "image_url": null,
+      "image": "toshiro-shirt.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 6,
+    "fields": {
+      "category": 2,
+      "sku": "Ulq/Shi/Whi",
+      "name": "Bleach Ulquiorra Shirt",
+      "description": "Ulquiorra Shirt, White, 100% Cotton",
+      "has_sizes": true,
+      "price": "30.00",
+      "rating": "5.00",
+      "image_url": null,
+      "image": "ulquiorra-shirt.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 7,
+    "fields": {
+      "category": 2,
+      "sku": "Aka/Shi/Whi",
+      "name": "Naruto Akatsuki Shirt",
+      "description": "Akatsuki Shirt, White, 100% Cotton",
+      "has_sizes": true,
+      "price": "30.00",
+      "rating": "5.00",
+      "image_url": null,
+      "image": "akatsuki-shirt.webp"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 8,
+    "fields": {
+      "category": 2,
+      "sku": "Ita/Hoo/Bla",
+      "name": "Naruto Itachi Hoodie",
+      "description": "Itachi Hoodie, Black, 100% Cotton",
+      "has_sizes": true,
+      "price": "60.00",
+      "rating": "5.00",
+      "image_url": null,
+      "image": "black-itachi-hoodie.webp"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 9,
+    "fields": {
+      "category": 2,
+      "sku": "Kak/Hoo/Bla",
+      "name": "Naruto Kakashi Hoodie",
+      "description": "Kakashi Hoodie, Black, 100% Cotton",
+      "has_sizes": true,
+      "price": "60.00",
+      "rating": "5.00",
+      "image_url": null,
+      "image": "kakashi-hoodie.webp"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 10,
+    "fields": {
+      "category": 2,
+      "sku": "Nar/Shi/Whi",
+      "name": "Naruto Shirt",
+      "description": "Naruto Shirt, White, 100% Cotton",
+      "has_sizes": true,
+      "price": "30.00",
+      "rating": "5.00",
+      "image_url": null,
+      "image": "naruto-shirt.webp"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 11,
+    "fields": {
+      "category": 2,
+      "sku": "Pai/Shi/Whi",
+      "name": "Naruto Pain Shirt",
+      "description": "Pain Shirt, White, 100% Cotton",
+      "has_sizes": true,
+      "price": "30.00",
+      "rating": "5.00",
+      "image_url": null,
+      "image": "pain-shirt.webp"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 12,
+    "fields": {
+      "category": 2,
+      "sku": "Roc/Hoo/Bla",
+      "name": "Naruto Rock Lee Hoodie",
+      "description": "Rock Lee Hoodie, Black, 100% Cotton",
+      "has_sizes": true,
+      "price": "60.00",
+      "rating": "5.00",
+      "image_url": null,
+      "image": "rock-lee-hoodie.webp"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 13,
+    "fields": {
+      "category": 2,
+      "sku": "Str/Shi/Red",
+      "name": "One Piece Straw Hats Shirt",
+      "description": "Straw Hats Shirt, Red, 100% Cotton",
+      "has_sizes": true,
+      "price": "30.00",
+      "rating": "5.00",
+      "image_url": null,
+      "image": "anime-pirates-t-shirt-red-s-262-768x768.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 14,
+    "fields": {
+      "category": 2,
+      "sku": "Cho/Shi/Nav",
+      "name": "One Piece Chopper Shirt",
+      "description": "Chopper Shirt, Navy Blue, 100% Cotton",
+      "has_sizes": true,
+      "price": "30.00",
+      "rating": "5.00",
+      "image_url": null,
+      "image": "choppa-tony-t-shirt-navy-blue-s-164-768x768.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 15,
+    "fields": {
+      "category": 2,
+      "sku": "Don/Shi/Bla",
+      "name": "One Piece Donquixote Doflamingo Shirt",
+      "description": "Donquixote Doflamingo Shirt, Black, 100% Cotton",
+      "has_sizes": true,
+      "price": "30.00",
+      "rating": "5.00",
+      "image_url": null,
+      "image": "donquixote-doflamingo-one-piece-otaku-design-t-shirt-black-s-110-768x768.png"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 16,
+    "fields": {
+      "category": 2,
+      "sku": "Goi/Shi/Whi",
+      "name": "One Piece Going Merry Shirt",
+      "description": "Going Merry Shirt, White, 100% Cotton",
+      "has_sizes": true,
+      "price": "30.00",
+      "rating": "5.00",
+      "image_url": null,
+      "image": "going-merry-go-t-shirt-white-s-247-768x768.png"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 17,
+    "fields": {
+      "category": 2,
+      "sku": "Kin/Shi/Whi",
+      "name": "One Piece Pirate King Shirt",
+      "description": "Pirate King Luffy Shirt, White, 100% Cotton",
+      "has_sizes": true,
+      "price": "30.00",
+      "rating": "5.00",
+      "image_url": null,
+      "image": "king-of-pirate-t-shirt-white-s-814-768x768.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 18,
+    "fields": {
+      "category": 2,
+      "sku": "Luf/Shi/Nav",
+      "name": "One Piece Luffy x Zoro Shirt",
+      "description": "Luffy x Zoro Shirt, Navy Blue, 100% Cotton",
+      "has_sizes": true,
+      "price": "30.00",
+      "rating": "5.00",
+      "image_url": null,
+      "image": "luffy-x-zoro-t-shirt-navy-blue-s-784-768x768.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 19,
+    "fields": {
+      "category": 3,
+      "sku": "Bya/Fig",
+      "name": "Bleach Byakuya Figure",
+      "description": "Byakuya Figure, PVC",
+      "has_sizes": false,
+      "price": "300.00",
+      "rating": "5.00",
+      "image_url": null,
+      "image": "byakuya-figure.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 20,
+    "fields": {
+      "category": 3,
+      "sku": "Ken/Fig",
+      "name": "Bleach Kenpachi Figure",
+      "description": "Kenpachi Figure, PVC",
+      "has_sizes": false,
+      "price": "300.00",
+      "rating": "5.00",
+      "image_url": null,
+      "image": "kenpachi-figure.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 21,
+    "fields": {
+      "category": 3,
+      "sku": "Ran/Fig",
+      "name": "Bleach Rangiku Figure",
+      "description": "Rangiku Figure, PVC",
+      "has_sizes": false,
+      "price": "300.00",
+      "rating": "5.00",
+      "image_url": null,
+      "image": "rangiku-figure.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 22,
+    "fields": {
+      "category": 3,
+      "sku": "Ren/Fig",
+      "name": "Bleach Renji Figure",
+      "description": "Renji Figure, PVC",
+      "has_sizes": false,
+      "price": "500.00",
+      "rating": "5.00",
+      "image_url": null,
+      "image": "renji-figure.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 23,
+    "fields": {
+      "category": 3,
+      "sku": "Shu/Fig",
+      "name": "Bleach Shunsui Figure",
+      "description": "Shunsui Figure, PVC",
+      "has_sizes": false,
+      "price": "350.00",
+      "rating": "5.00",
+      "image_url": null,
+      "image": "shunsui-figure.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 24,
+    "fields": {
+      "category": 3,
+      "sku": "Uki/Fig",
+      "name": "Bleach Ukitake Figure",
+      "description": "Ukitake Figure, PVC",
+      "has_sizes": false,
+      "price": "350.00",
+      "rating": "5.00",
+      "image_url": null,
+      "image": "ukitake-figure.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 25,
+    "fields": {
+      "category": 3,
+      "sku": "Ita/Fig",
+      "name": "Naruto Itachi Figure",
+      "description": "Itachi Figure, PVC",
+      "has_sizes": false,
+      "price": "300.00",
+      "rating": "5.00",
+      "image_url": null,
+      "image": "itachi-figure.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 26,
+    "fields": {
+      "category": 3,
+      "sku": "Kak/Fig",
+      "name": "Naruto Kakashi Figure",
+      "description": "Kakashi Figure, PVC",
+      "has_sizes": false,
+      "price": "500.00",
+      "rating": "5.00",
+      "image_url": null,
+      "image": "kakashi-figure.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 27,
+    "fields": {
+      "category": 3,
+      "sku": "Mad/Fig",
+      "name": "Naruto Madara-Obito Figure",
+      "description": "Madara-Obito Figure, PVC",
+      "has_sizes": false,
+      "price": "400.00",
+      "rating": "5.00",
+      "image_url": null,
+      "image": "madara-obito-figure.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 28,
+    "fields": {
+      "category": 3,
+      "sku": "Nar/Fig",
+      "name": "Naruto Figure",
+      "description": "Naruto Figure, PVC",
+      "has_sizes": false,
+      "price": "300.00",
+      "rating": "5.00",
+      "image_url": null,
+      "image": "naruto-figure.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 29,
+    "fields": {
+      "category": 3,
+      "sku": "Obi/Fig",
+      "name": "Naruto Obito Figure",
+      "description": "Obito Figure, PVC",
+      "has_sizes": false,
+      "price": "350.00",
+      "rating": "5.00",
+      "image_url": null,
+      "image": "obito-figure.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 30,
+    "fields": {
+      "category": 3,
+      "sku": "Sas/Fig",
+      "name": "Naruto Sasuke Figure",
+      "description": "Sasuke Figure, PVC",
+      "has_sizes": false,
+      "price": "500.00",
+      "rating": "5.00",
+      "image_url": null,
+      "image": "sasuke-figure.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 31,
+    "fields": {
+      "category": 3,
+      "sku": "Ace/Fig",
+      "name": "One Piece Ace Figure",
+      "description": "Ace Figure, PVC",
+      "has_sizes": false,
+      "price": "250.00",
+      "rating": "5.00",
+      "image_url": null,
+      "image": "ace-figure.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 32,
+    "fields": {
+      "category": 3,
+      "sku": "Bla/Fig",
+      "name": "One Piece Black Beard Figure",
+      "description": "Black Beard Figure, PVC",
+      "has_sizes": false,
+      "price": "500.00",
+      "rating": "5.00",
+      "image_url": null,
+      "image": "black-beard-figure.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 33,
+    "fields": {
+      "category": 3,
+      "sku": "Luf/Fig",
+      "name": "One Piece Luffy Figure",
+      "description": "Luffy Figure, PVC",
+      "has_sizes": false,
+      "price": "350.00",
+      "rating": "5.00",
+      "image_url": null,
+      "image": "luffy-figure.gif"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 34,
+    "fields": {
+      "category": 3,
+      "sku": "Mar/Fig",
+      "name": "One Piece Marco Figure",
+      "description": "Marco Figure, PVC",
+      "has_sizes": false,
+      "price": "350.00",
+      "rating": "5.00",
+      "image_url": null,
+      "image": "marco-figure.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 35,
+    "fields": {
+      "category": 3,
+      "sku": "San/Fig",
+      "name": "One Piece Sanji Figure",
+      "description": "Sanji Figure, PVC",
+      "has_sizes": false,
+      "price": "400.00",
+      "rating": "5.00",
+      "image_url": null,
+      "image": "sanji-figure.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 36,
+    "fields": {
+      "category": 3,
+      "sku": "Zor/Fig",
+      "name": "One Piece Zoro Figure",
+      "description": "Zoro Figure, PVC",
+      "has_sizes": false,
+      "price": "400.00",
+      "rating": "5.00",
+      "image_url": null,
+      "image": "zoro-figure.gif"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 37,
+    "fields": {
+      "category": 4,
+      "sku": "Ich/Pro",
+      "name": "Bleach Ichigo Hollow Mask",
+      "description": "Ichigo Hollow Mask",
+      "has_sizes": false,
+      "price": "20.00",
+      "rating": "5.00",
+      "image_url": null,
+      "image": "ichigo-hollow-mask.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 38,
+    "fields": {
+      "category": 4,
+      "sku": "Ich/Pro/1",
+      "name": "Bleach Ichigo Sword",
+      "description": "Ichigo Sword, Wood",
+      "has_sizes": false,
+      "price": "50.00",
+      "rating": "5.00",
+      "image_url": null,
+      "image": "ichigo-sword.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 39,
+    "fields": {
+      "category": 4,
+      "sku": "Ken/Pro",
+      "name": "Bleach Kenpachi Sword",
+      "description": "Kenpachi Sword, Wood",
+      "has_sizes": false,
+      "price": "50.00",
+      "rating": "5.00",
+      "image_url": null,
+      "image": "kenpachi-sword.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 40,
+    "fields": {
+      "category": 4,
+      "sku": "Ruk/Pro",
+      "name": "Bleach Rukia Sword",
+      "description": "Rukia Sword, Wood",
+      "has_sizes": false,
+      "price": "50.00",
+      "rating": "5.00",
+      "image_url": null,
+      "image": "rukia-sword.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 41,
+    "fields": {
+      "category": 4,
+      "sku": "Tos/Pro",
+      "name": "Bleach Toshiro Sword",
+      "description": "Toshiro Sword, Wood",
+      "has_sizes": false,
+      "price": "50.00",
+      "rating": "5.00",
+      "image_url": null,
+      "image": "toushirou-sword.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 42,
+    "fields": {
+      "category": 4,
+      "sku": "Kis/Pro",
+      "name": "Bleach Kisuke Urahara Sword",
+      "description": "Kisuke Urahara Sword, Wood",
+      "has_sizes": false,
+      "price": "50.00",
+      "rating": "5.00",
+      "image_url": null,
+      "image": "urahara-sword.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 43,
+    "fields": {
+      "category": 4,
+      "sku": "Aka/Pro",
+      "name": "Naruto Akatsuki Rings",
+      "description": "Akatsuki Rings, 10 rings, Stainless Steel",
+      "has_sizes": false,
+      "price": "30.00",
+      "rating": "5.00",
+      "image_url": null,
+      "image": "akatsuki-rings.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 44,
+    "fields": {
+      "category": 4,
+      "sku": "Aka/Pro/1",
+      "name": "Naruto Akatsuki Robe",
+      "description": "Akatsuki Robe, 100% Cotton",
+      "has_sizes": false,
+      "price": "50.00",
+      "rating": "5.00",
+      "image_url": null,
+      "image": "akatsuki-robe.jpeg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 45,
+    "fields": {
+      "category": 4,
+      "sku": "Min/Pro",
+      "name": "Naruto Minato Costume",
+      "description": "Minato Costume for Cosplay",
+      "has_sizes": false,
+      "price": "50.00",
+      "rating": "5.00",
+      "image_url": null,
+      "image": "minato-costume.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 46,
+    "fields": {
+      "category": 4,
+      "sku": "Nar/Pro",
+      "name": "Naruto Hokage Robe",
+      "description": "Naruto Hokage Robe for Cosplay",
+      "has_sizes": false,
+      "price": "50.00",
+      "rating": "5.00",
+      "image_url": null,
+      "image": "naruto-hokage-robe.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 47,
+    "fields": {
+      "category": 4,
+      "sku": "Nin/Pro",
+      "name": "Naruto Ninja Headband",
+      "description": "Naruto Ninja Headband for Cosplay, Stainless Steel",
+      "has_sizes": false,
+      "price": "20.00",
+      "rating": "5.00",
+      "image_url": null,
+      "image": "naruto-ninja-headband.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 48,
+    "fields": {
+      "category": 4,
+      "sku": "Tob/Pro",
+      "name": "Naruto Tobi Mask",
+      "description": "Tobi Mask for Cosplay, Plastic",
+      "has_sizes": false,
+      "price": "15.00",
+      "rating": "5.00",
+      "image_url": null,
+      "image": "tobi-mask.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 49,
+    "fields": {
+      "category": 4,
+      "sku": "Jol/Pro",
+      "name": "One Piece Straw Hat Jolly Roger",
+      "description": "Straw Hat Jolly Roger, 90x150 cm",
+      "has_sizes": false,
+      "price": "20.00",
+      "rating": "5.00",
+      "image_url": null,
+      "image": "90-150CM-One-Piece-Monkey-D-Luffy-Skull-Flag.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 50,
+    "fields": {
+      "category": 4,
+      "sku": "Ace/Pro",
+      "name": "One Piece Ace Hat",
+      "description": "Ace Hat for Cosplay",
+      "has_sizes": false,
+      "price": "20.00",
+      "rating": "5.00",
+      "image_url": null,
+      "image": "Ace-Hat-Official-Merch.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 51,
+    "fields": {
+      "category": 4,
+      "sku": "Zor/Pro",
+      "name": "One Piece Zoro Swords",
+      "description": "Zoro Swords, All Wood",
+      "has_sizes": false,
+      "price": "200.00",
+      "rating": "5.00",
+      "image_url": null,
+      "image": "Fun-104cm-Cosplay-Anime-One-Piece-Roronoa-Zoro-Trafalgar-Law-weapon-wooden-Sword-model-Costume.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 52,
+    "fields": {
+      "category": 4,
+      "sku": "Luf/Pro",
+      "name": "One Piece Luffy Hat",
+      "description": "Luffy Hat for Cosplay",
+      "has_sizes": false,
+      "price": "20.00",
+      "rating": "5.00",
+      "image_url": null,
+      "image": "one-piece-monkey-d-luffy-straw-hat-cosplay-156-768x768.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 53,
+    "fields": {
+      "category": 4,
+      "sku": "Tra/Pro",
+      "name": "One Piece Trafalgar Hat",
+      "description": "Trafalgar Hat for Cosplay",
+      "has_sizes": false,
+      "price": "20.00",
+      "rating": "5.00",
+      "image_url": null,
+      "image": "trafalgar-law-official-merch.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 54,
+    "fields": {
+      "category": 4,
+      "sku": "Chop/Pro",
+      "name": "One Piece Chopper Hat",
+      "description": "Chopper Hat for Cosplay",
+      "has_sizes": false,
+      "price": "20.00",
+      "rating": "5.00",
+      "image_url": null,
+      "image": "chopper-hat-official-merch.jpg"
+    }
+  },
+]

@@ -1,0 +1,26 @@
+[
+    {
+    "pk": 2,
+    "model": "products.category",
+    "fields": {
+      "name": "Apparel",
+      "friendly_name": "Apparel"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "products.category",
+    "fields": {
+      "name": "Figures",
+      "friendly_name": "Figures"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "products.category",
+    "fields": {
+      "name": "Props",
+      "friendly_name": "Props"
+    }
+},
+]
