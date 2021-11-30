@@ -118,8 +118,8 @@ LOGIN_REDIRECT_URL = '/'
 WSGI_APPLICATION = 'big_3.wsgi.application'
 
 
-Database
-https://docs.djangoproject.com/en/3.2/ref/settings/#databases
+#Database
+#https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
@@ -132,6 +132,7 @@ else:
             'NAME': BASE_DIR / 'db.sqlite3',
         }
     }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
