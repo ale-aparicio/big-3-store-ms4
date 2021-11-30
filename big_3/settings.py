@@ -96,13 +96,11 @@ TEMPLATES = [
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
 AUTHENTICATION_BACKENDS = [
-    
     # Needed to login by username in Django admin, regardless of `allauth`
     'django.contrib.auth.backends.ModelBackend',
 
     # `allauth` specific authentication methods, such as login by e-mail
-    'allauth.account.auth_backends.AuthenticationBackend',
-  
+    'allauth.account.auth_backends.AuthenticationBackend', 
 ]
 
 SITE_ID = 1
@@ -206,8 +204,8 @@ if 'USE_AWS' in os.environ:
 FREE_DELIVERY_THRESHOLD = 50
 STANDARD_DELIVERY_PERCENTAGE = 10
 STRIPE_CURRENCY = 'usd'
-STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', 'pk_test_51JjkFdBcl3k8zAkhxIUf36i9JFHb1JwWQva2Vn3zAmR9v6kq5e8peR7zLvIz3DDCwHGHmohlaPzSugGTMrAHOegl00LLuyjXhI')
-STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', 'sk_test_51JjkFdBcl3k8zAkhwdtLwCdonHQdEb76KF5OIlTSaJrocw8R49cxHAcl0BbFSEvl9mTsvAkiVa7kSCEFrAFMmxo000jcs4rt43')
+STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
+STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
 DEFAULT_FROM_EMAIL = 'big3@example.com'
 
