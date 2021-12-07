@@ -152,4 +152,137 @@ As a **Business Owner**, I would liek to be able to:
 - Add, Edit and Delete Products. 
 - Edit product prices
 - Delete user reviews, in case they're of malicious intent
-- Check customer 
+- Check customer questions and suggestions via email.
+
+Constraints 
+- Developer Skill Set - the Developer is currently learning **Python** and **Django**. This may impact the implementation of features used in the First stage of development. 
+
+- Available Time - the developer is currently a full time university student with multiple classes with a heavy load of assignments while balacing that and the development of this web application.
+
+### Key Features 
+
+The following key features have been implemented thoroughout the website: 
+
+#### Product Detail 
+
+- A description of the selected product, along with an image of the product, the price, and the reviews from past users. For the products on the apparel category sizes have been implemented so the user has an array of option that best suits their needs.
+
+#### Cart
+
+- Enables the user to view, and purchase the products they have choosen, it includes a secure checkout and an email confirmation when a purchase has been successfully made. 
+
+#### Registration Form 
+
+- Used for users to register an account. 
+
+#### Sign In Form 
+
+- Enables the user to log in to their existing account.
+
+#### Sign out 
+
+- Enavles the user to Sign out from their account.
+
+#### Recover Password 
+
+- Recover a forgotten password to a User's Account.
+
+#### Order Summary 
+
+- See the summary of the past orders.
+
+#### Contact
+
+- Contact the business owner with inquiries about past orders or with suggestions or criticism.
+
+#### Review Productrs
+
+- Review a product and give feedback
+
+#### Add, Edit, and Delete a Product
+
+- Enables the business owner and certified users to add, edit and delete products. 
+
+#### Edit and Delete Reviews 
+
+- Enables users and certified users to edit an delete reviews as they see fit.
+
+### Wireframes
+
+Wireframes were made to have a clearer vision of how the website would look like. Note that the wireframe was the first vision of the website and does not reflect the current design of the website as many changes have been made due to feedback from the developer's mentor and other outside feedback such as family and friends.
+
+![Wireframe of the website]()
+
+### Design Choices 
+
+#### Fonts 
+
+[Emblema One](https://fonts.google.com/specimen/Emblema+One?q) was used for the logo.
+
+[Rowdies](https://fonts.google.com/specimen/Rowdies?query=Rowdies) was used as the main font throughout the website 
+
+The developer chose to only use two fonts as it will be easy to manage and keep the fonts consistent throughout the website. 
+
+#### Colors 
+
+A light simple theme has been chosen for the websit, as you can see this varies massively form the wireframes due to feedback from the developer's mentor, as the wireframes looked like old early 90's websites and it was better to go for a more minimalistic modern look. This compliments greatly as there is no target age demographic and the site expects to recieve visits from all age groups. 
+
+![Color Pallette]()
+
+## Technologies 
+### Itegrated Development Enviroment 
+- [GitHub](https://github.com) 
+### Languages 
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) 
+- [CSS](https://www.w3.org/Style/CSS/Overview.en.html) 
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) 
+- [Python](https://www.python.org) 
+### Database
+- Development - [SQLite](https://docs.djangoproject.com/en/3.2/ref/databases/#sqlite-notes) 
+- Deployed Site - [Heroku Postgres](https://www.heroku.com/postgres) 
+### Storage 
+- [AWS](https://aws.amazon.com) - used to store static files.
+
+### Payments 
+- [Stripe](https://stripe.com) - secure and fully integrated payment platform.
+
+### Frameworks 
+- [Django](https://www.djangoproject.com) - web development framework.
+- [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/) - to assist with responsive design.
+- [jQuery](https://jquery.com) - to assist with JavaScript coding and DOM manipulation.
+### Libraries and Tools
+- [Figma](https://www.figma.com) - used to produce the Wireframes
+
+- [Font Awesome](https://fontawesome.com)
+
+- [Google Fonts](https://fonts.google.com)
+
+- [django-allauth](https://django-allauth.readthedocs.io/en/latest/index.html) - user authentication and account management.
+
+* [boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html) - **Amazon Web Services SDK** for python. Used to configure **Amazon Web Services S3** storage of static files.
+* [django-crispy-forms](https://django-crispy-forms.readthedocs.io/en/latest/) - enables enhanced rendering of Django forms including integration with **Bootstrap**.
+* [dj-database-url](https://pypi.org/project/dj-database-url/) - Django database configuration utility. Used to configure connection to the **Heroku** deployed postgres database.
+* [django-countries](https://pypi.org/project/django-countries/) - Django application providing country choices for use with forms etc. Used to populate country choices on the **Country** dropdowns.
+* [django-extensions](https://django-extensions.readthedocs.io/en/latest/) - Collection of custom extensions for **Django**. Used to automatically export the final data schema diagram for the **Django** model.
+* [django-storages](https://django-storages.readthedocs.io/en/latest/) - Custom storage backends for **Django**. Used to configure **Amazon Web Services S3** storage of static files.
+* [gunicorn](https://gunicorn.org/) - Python WSGI HTTP Server for UNIX. Used as part of the **Heroku** deployment process.
+* [pillow](https://pillow.readthedocs.io/en/stable/) - Python imaging library.
+* [psycopg2](https://pypi.org/project/psycopg2/) - **PostgreSQL** database adapter for Python. Used as part of the **Heroku** deployment process.
+
+### Browser Support 
+The following browsers are all supported by **Big 3 Store**:
+
+* [Google Chrome](https://www.google.com/intl/en_uk/chrome/)
+* [Microsoft Edge](https://www.microsoft.com/en-us/edge)
+* [Safari](https://www.apple.com/uk/safari/)
+* [Firefox](https://www.mozilla.org/en-GB/firefox/new/)
+* [Opera](https://www.opera.com/)
+
+## Structure
+
+
+
+
+
+
+
