@@ -36,7 +36,7 @@ a {
 }
 
 .main-banner {
-    background: url(/media/big_3_banner.jpg/) no-repeat center center fixed;
+    background: url(/media/big_3_banner.jpg) no-repeat center center fixed;
     display: inline-block;
     width: 100%;
     min-height: 8rem;
