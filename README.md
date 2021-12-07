@@ -280,7 +280,20 @@ The following browsers are all supported by **Big 3 Store**:
 
 ## Structure
 
+### Information Architecture
+[Heroku PostgreSQL](https://www.heroku.com/postgres) is used to host the back-end database for the site.
 
+The shops code base has been developed using the **Django** framework, and is made out of the following **Django** apps:
+
+- Basket
+- Checkout
+- Home
+- Products
+- Profiles
+
+Basket Models 
+
+- 
 
 
 
