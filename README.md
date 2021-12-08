@@ -285,16 +285,106 @@ The following browsers are all supported by **Big 3 Store**:
 
 The shops code base has been developed using the **Django** framework, and is made out of the following **Django** apps:
 
-- Basket
-- Checkout
 - Home
 - Products
+- Bag
+- Checkout
 - Profiles
 
-Basket Models 
+### Home Models - 
+The **Home Model** is simply used to display the home page of the website. It is the first thing User's see when navigating thorough the website so it connects all the models together in one page. 
 
-- 
+### Products Models - 
 
+**Product** is split up into different sections: 
+
+- **All Products** - is used to display all the products available despite their categorization. This section can be accessed through the home page.
+
+- **Products Sectioned by Categories** - is split into 3 main categories:
+    - **Apparel** - used to display all apparel from all 3 anime's.
+
+    - **Figures** - used to display all figures from all 3 anime's. 
+
+    - **Props** - used to display all props from all 3 anime's. 
+
+- The **Products** module is also split up into 3 **sub categories** those being:
+    - **Bleach** - used to display all the merchandise related to the Bleach anime.
+
+    - **Naruto** - used to display all the merchandise related to the Naruto anime.
+
+    - **One Piece** - used to display all the merchandise related to the One Piece Anime.
+
+- **Product Details** is used to display a product's specifics, such as:
+
+    - **Product Image**
+    
+    - **Product Name**
+
+    - **Product Price**
+
+    - **Product Rating**
+
+    - **Product Description**
+
+    - **Product Sizes** - if the product is an Apparel an option to select the sizes will be displayed 
+
+    - **Product Quantity** - button used to select how much of a product a user wants.
+
+- **Product Reviews** is a small section underneath the product details it is used to display the reviews submitted by registered users. It displays a users name, rating, and their feedback. 
+
+### Bag Models - 
+
+The **Bag** module is used to display all products a user has selected. It displays all the products information and the quantity of the product the user has selected. It leads directly into the **Checkout Module**. 
+
+### Checkout Module - 
+
+The **Checkout** module is used to display and input a users information and credit information in order to make a payment. It is essential that all the information is secured as it is very sensitive and private information.
+
+### Profiles Module - 
+
+The **Profiles** module is used to register new users and for current users to log into their account. The profiles app is used to allow the user to not only access their own informatin aswell as past order history but also to allow registered users to access specific features such as the Review Forms. The Profiles Form allows the user to save and edit their personal information.
+
+## Features Implemented 
+Most of the features implemented do not require the need to create an account, but there are certain features that do require the need to create an account. 
+
+Features included in the Base template include:
+
+- A **Bootstrap** Collapsing navigation button, it features all of the category navigation buttons, the Product Search bar, the Business logo and a basket button along with a Contact Us! Button and a Profile Button. 
+
+- The Big 3 Logo, links to the home page when clicked on.
+
+- Product Search, enables the user to search for a specific product. It returns the product page with any product containing the search string entered in the Product name or in the description.
+
+- **Basket Link** links to the basket page. 
+
+- **Profile** Menu, opens a dropdown menu. For un-registered users, the menu items are Log in, and Register buttons. For registered users it contains the My Profile and the Sign out button. For superusers it contains an extra button that leads to the product management page.
+
+- The **Footer** includes a footer tagline and social media links. 
+
+- **Social Media Links** since this is not a real store the socia media buttons do not link to any related **big 3** specific pages they just link to the home pages of the respective social medias. 
+
+- The **Contact** form can be accessed form the **User Menu**. It enables the user to contact the store owners with concerns and suggestions via email. 
+
+- **User Authentication System** is implemented using [django-allauth](https://django-allauth.readthedocs.io/en/latest/index.html). 
+    - The **Log In**, enables the user to log into their existing account is is followed by a forgot password incase the user needs a password recovery aswell as a Remember Me button that will save the users information for the next time they Log in.
+
+    - The **Register** link allows the user to create an account, the user will then need to verify the account by email. 
+
+    - The **Sign Out** link allows the user to sign out of their account if decide they want to use another account or in case they are logged in from a foreign device. 
+
+- **Password Reset** allows the user to reset their forgotten password an authentication will be sent via email. The user will then be able to access the change password page via the link sent to their email which will allow them to change their password.
+
+- The **Products** display all the products available. Products can be searched using the **Product Search** feature. If the user is looking for a more broad seach the **Product Categories** will allow them to sort the products by categories and even by specific anime in case they're only looking for products from a specific Anime. 
+
+- The **Product Details** contains the image of a product as well as the product description, rating, and price. It also contains buttons to choose the quantity and the sizes depending on the product. 
+
+- **Customer Reviews**, displays the reviews for the specific product that is being viewed. It displays the user that submitted the review aswell as their rating of the product and their feedback. 
+
+- **Product Add, Edit, and Delete** is an exclusive feature only available for **Super Users**. It enables store owners and certified personel to add new products aswell as edit and delete existing ones. The Form is simple it contains all the necessary fields such as a Product Name, Product Image, Price, Description, and Category. 
+
+- **Messaging System** has been implemented with the help of **Toast Messages**. They provide feedback to the user on the top right side of the screen. 
+
+- **Checkout**, can be accesed through the secure checkout button in the bag page. 
 
 
 
