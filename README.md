@@ -359,7 +359,7 @@ The Checkout page has just been simplified and we have added a few more form ent
 
 ## Testing 
 
-Testing information can be found in the ... file. 
+Testing information can be found in the [TESTING.md](TESTING.md) file. 
 
 ## Deployment 
 
@@ -368,20 +368,6 @@ The project has been developed using **Gitpod** and **Github**. The project had 
 The website has been deployed using **Heroku** with the help of **Amazon Web Services** to store the static and media files.
 
 In order to make a Fork or Clone of the project, a GitHub account is required. The Gitpod Browser Extension is also recommended.
-
-- To Fork the project:
-
-- To Clone the project:
-
-- To Download the project:
-
-- To set up the local testing environment:
-
-- To deploy the website to Heroku:
-
-- To deploy static files to Amazon AWS, and configure Heroku to read static files from Amazon AWS:
-
-- To Configure Stripe for the deployed site.
 
 ## Credits 
 -  [StackOverflow](https://stackoverflow.com) for the incredible help whenever something was not working as it should. 
