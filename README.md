@@ -384,7 +384,67 @@ Features included in the Base template include:
 
 - **Messaging System** has been implemented with the help of **Toast Messages**. They provide feedback to the user on the top right side of the screen. 
 
-- **Checkout**, can be accesed through the secure checkout button in the bag page. 
+- **Cart**, can be accessed anywhere in the site. When an item has been added into the bag a message is displayed stating the current items in the bag. After items have been added the cart will turn red and display the total amount for all the items in the cart. The cart, displays all the product information while allowing the user to remove and customize the quantity of items added to it. The Cart page redirects to the checkout page.
+
+
+- **Checkout**, can be accessed through the secure checkout button in the cart page. The form in the checkout page can be filled out if a user has it's information saved in their profile page. The form requires all necessary information to contact, and send the product to the user, it also requires the user's credit card information. 
+
+ - **Checkout Success**, is the page after the checkout form is completed. Let's the user know that an email has been sent and gives them their order number aswell as a summary of their order. 
+
+- **User Profile** allows the user to add and edit their personal information aswell as view their past orders.
+
+
+### Features to be Implemented in the future
+
+ - **Analytics** - give the store owners a way to view what products and categories are the most viewed and purchased to ensure future products have a higher chance of success.
+
+- **Suggestion Section** - rather than suggestions being made through the contact form a designated section can be made that enables the developer to view suggestions from a section in the website or from the admin page. 
+
+- **About Us** page so that users can have a better understanding of who we are as a business.
+
+### Design Changes 
+
+After a conversation with my mentor the entire design of the website was changed from the original wireframe design to a more simple, modern look due to the wireframe design looking old and outdated. 
+
+The colors have been simplified to a black and white with a grey background rather than using shades of blue and orange for the design of the website. 
+
+The overall structure of the website has been changed a little to make it have a more modern look and feel to it
+some of the more noticeable changes are to the Cart, Checkout. 
+
+Cart has been slightly changed to accomodate extra functionalities and pieces of information aswell as simplify the design to make it more sleek and appealing to the eye. 
+
+The Checkout page has just been simplified and we have added a few more form entries needed for the checkout process to be complete. 
+
+## Testing 
+
+Testing information can be found in the ... file. 
+
+## Deployment 
+
+The project has been developed using **Gitpod** and **Github**. The project had regular commits to **Github** throughout the development of the site. 
+
+The website has been deployed using **Heroku** with the help of **Amazon Web Services** to store the static and media files.
+
+In order to make a Fork or Clone of the project, a GitHub account is required. The Gitpod Browser Extension is also recommended.
+
+- To Fork the project:
+
+- To Clone the project:
+
+- To Download the project:
+
+- To set up the local testing environment:
+
+- To deploy the website to Heroku:
+
+- To deploy static files to Amazon AWS, and configure Heroku to read static files from Amazon AWS:
+
+- To Configure Stripe for the deployed site :
+
+## Credits 
+
+- Thanks to my mentor **
+
 
 
 
