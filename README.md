@@ -6,64 +6,6 @@ The Big 3 Store is a website dedicated to the selling of products related to the
 
 ![Display of the Website]()
 
-## Contents ##
-
-- [Mission Statement](#mission-statement)
-- [Target Audience](#target-audience)
-- [Business Objectives](#business-objectives)
-- [User Experience](#user-experience)
-- [UX](#ux)
-    - [Project Strategy](#project-strategy)
-    - [Project Scope](#project-scope)
-        - [User Demographics](#user-demographics)
-        - [User Requirements](#user-requirements)
-        - [Functional Requirements](#functional-requirements)
-        - [User Stories](#user-stories)
-        - [Constraints](#constraints)
-        - [Business Rules](#business-rules)
-        - [Key Features](#key-features)
-    - [Site Map](#site-map)
-    - [Wireframes](#wireframes)
-    - [Design Choices](#design-choices)
-        - [Fonts](#fonts)
-        - [Colours](#colours)
-- [Technologies](#technologies)
-    - [Integrated Development Environment](#integrated-development-environment)
-    - [Languages](#languages)
-    - [Database](#database)
-    - [Storage](#storage)
-    - [Payments](#payments)
-    - [Frameworks](#frameworks)
-    - [Libraries and Tools](#libraries-and-tools)
-    - [Browser Support](#browser-support)
-- [Structure](#structure)
-    - [Information Architecture](#information-architecture)
-        - [Products Models](#products-models)
-        - [Checkout Models](#checkout-models)
-        - [Profiles Models](#profiles-models)
-        - [Basket Models](#basket-models)
-    - [Features Implemented](#features-implemented)
-        - [Features Implemented in Phase 1](#features-implemented-in-phase-1)
-            - [Features Included In Base Template](#features-included-in-base-template)
-            - [Contact](#contact)
-            - [User Authentication System](#user-authentication-system)
-            - [Products](#products)
-            - [Messaging System](#messaging-system)
-            - [Basket](#basket)
-            - [Checkout](#checkout)
-            - [User Profile](#user-profile)
-        - [Features To Be Implemented In Future Development Phases](#features-to-be-implemented-in-future-development-phases)
-        - [Design Changes During The Phase 1 Development](#design-changes-during-the-phase-1-development)
-    - [Responsive Styling](#responsive-styling)
-    - [Python Code Logic](#python-code-logic)
-    - [Form Validation](#form-validation)
-    - [JavaScript Code Logic](#javascript-code-logic)
-
-- [Testing](#testing)
-- [Deployment](#deployment)
-- [Credits](#credits)
-- [Acknowledgements](#acknowledgements)
-
 ## Mission Statement ##
 
 To provide the best quality product at the most affordable price possible.
@@ -439,11 +381,16 @@ In order to make a Fork or Clone of the project, a GitHub account is required. T
 
 - To deploy static files to Amazon AWS, and configure Heroku to read static files from Amazon AWS:
 
-- To Configure Stripe for the deployed site :
+- To Configure Stripe for the deployed site.
 
 ## Credits 
+-  [StackOverflow](https://stackoverflow.com) for the incredible help whenever something was not working as it should. 
 
-- Thanks to my mentor **
+- [Richard Henyash's](https://github.com/richardhenyash/perkulater) [Perkulator](https://perkulater.herokuapp.com) project. I replicated his review feature since I really liked the star system and the way he had his reviews setup was really appealing and thought it was very well executed. I discovered his project scrolling through the peer-code-review section in slack while looking for inspiration on features.
+
+- Thanks to my mentor **Oluwaseun Owonikoko** for her incredible help and advice. 
+
+
 
 
 
