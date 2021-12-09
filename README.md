@@ -89,7 +89,7 @@ As a **Registered User**, I would like to be able to:
 - See my past orders.s.
 - Edit previous Reviews.
 
-As a **Business Owner**, I would liek to be able to: 
+As a **Business Owner**, I would like to be able to: 
 
 - Add, Edit and Delete Products. 
 - Edit product prices
