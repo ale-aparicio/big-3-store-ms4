@@ -374,7 +374,7 @@ input[name='q']::placeholder {
     }
 
     .main-banner {
-        background: url(/media/Big_3_Banner.jpg/) no-repeat center center fixed;
+        background: url(/media/Big_3_Banner.jpg) no-repeat center center fixed;
         display: inline-block;
         width: 100%;
         min-height: 15rem;
