@@ -2,7 +2,7 @@
 
 [View live website](https://big-3-store.herokuapp.com)
 
-The Big 3 Store is a website dedicated to the selling of products related to the 3 best selling shonen manga's of the 2000's. It is designed to be easily accesible from a range of devices, making it easy to navigate and browse through the different available products. 
+The Big 3 Store is a website dedicated to the selling of products related to the 3 best selling shonen manga's of the 2000's. It is designed to be easily accessible from a range of devices, making it easy to navigate and browse through the different available products. 
 
 ![Display of the Website](media/README/big-3-mockup.jpg)
 ## Mission Statement ##
@@ -11,7 +11,7 @@ To provide the best quality product at the most affordable price possible.
 
 ## Target Audience ##
 
-The target audience for **The Big 3** is fans of the popular Anime's featured on our store. We attempt to provide the highest possible quality at affordable prices so that the products offered can be accesible to everyone.
+The target audience for **The Big 3** is fans of the popular Anime's featured on our store. We attempt to provide the highest possible quality at affordable prices so that the products offered can be accessible to everyone.
 
 ## Business Objectives ##
 
@@ -28,7 +28,7 @@ Although the business is merely for educational purposes it's overall design and
 - Purchase medium to high quality products from the 3 anime's featured in the website
 such as apparel, figures, and props. 
 
-- See other user's reviews and feedback to give new users the necesarry information to encourage them to purchase said item.
+- See other user's reviews and feedback to give new users the necessary information to encourage them to purchase said item.
 
 - Contact the business about an order or to provide feedback about the website or more product they would like to see featured in the shop.
 
@@ -44,17 +44,17 @@ The strategies used to build the website and the business as a whole are listed 
 The apparel offered in the website are currently from a variety of providers, and quality controlled by us to ensure both the quality and the pricing of the product has been justified to maximize customer satisfaction.
 
 #### Figures:
-The figures have been carefully selected and carefully priced based on the materials and amount of detail the figure has aswell as the availablity of each figure.
+The figures have been carefully selected and carefully priced based on the materials and amount of detail the figure has as well as the availability of each figure.
 
 #### Props:
-The Props available are clear replicas of some of the memorable wear and accesories of the characters showcased in the shows. We attempt to offer the most identical products to the items displayed in the show.
+The Props available are clear replicas of some of the memorable wear and accessories of the characters showcased in the shows. We attempt to offer the most identical products to the items displayed in the show.
 
 ### Customer Reviews 
-Customer Reviews are important for the overall ecosystem of the business as it provides happy and disatisfied customers a way to express their views on products they have purchased and by doing so giving new customers and us as business owners feedback on popular products aswell as lacking products that might need to me replaced, improved or removed. 
+Customer Reviews are important for the overall ecosystem of the business as it provides happy and dissatisfied customers a way to express their views on products they have purchased and by doing so giving new customers and us as business owners feedback on popular products as well as lacking products that might need to be replaced, improved or removed. 
 
 ## Project Scope
 ### User Demographics 
-- The primare users of the site will be fans of the featured shows looking for merchandise or memorabilia from shows they watched as kids or have just started watching it's targeted for all ages. 
+- The primary users of the site will be fans of the featured shows looking for merchandise or memorabilia from shows they watched as kids or have just started watching it's targeted for all ages. 
 
 - The website is simple, easy to use and easy to navigate that displays the necessary information for the user to be able to find what they're looking for with ease. 
 
@@ -75,7 +75,7 @@ As a **New Customer** I would like to be able to:
 - Be able to explore the available products.
 - Add products that are to my liking to my cart, so I can purchase them. 
 - Be able to view the requirements for a free delivery to make my purchases according to those requirements.
-- Recieve a confirmation my purchase has been made via email.
+- Receive a confirmation my purchase has been made via email.
 - Register to the site and be able to have my past orders displayed and my personal information saved for future purchases. 
 - Contact the business with questions about past and current orders and with suggestions and feedback about possible future changes and current complaints.
 
@@ -98,11 +98,11 @@ As a **Business Owner**, I would like to be able to:
 Constraints 
 - Developer Skill Set - the Developer is currently learning **Python** and **Django**. This may impact the implementation of features used in the First stage of development. 
 
-- Available Time - the developer is currently a full time university student with multiple classes with a heavy load of assignments while balacing that and the development of this web application.
+- Available Time - the developer is currently a full time university student with multiple classes with a heavy load of assignments while balancing that and the development of this web application.
 
 ### Key Features 
 
-The following key features have been implemented thoroughout the website: 
+The following key features have been implemented throughout the website: 
 
 #### Product Detail 
 
@@ -110,7 +110,7 @@ The following key features have been implemented thoroughout the website:
 
 #### Cart
 
-- Enables the user to view, and purchase the products they have choosen, it includes a secure checkout and an email confirmation when a purchase has been successfully made. 
+- Enables the user to view, and purchase the products they have chosen, it includes a secure checkout and an email confirmation when a purchase has been successfully made. 
 
 #### Registration Form 
 
@@ -122,7 +122,7 @@ The following key features have been implemented thoroughout the website:
 
 #### Sign out 
 
-- Enavles the user to Sign out from their account.
+- Enables the user to Sign out from their account.
 
 #### Recover Password 
 
@@ -136,7 +136,7 @@ The following key features have been implemented thoroughout the website:
 
 - Contact the business owner with inquiries about past orders or with suggestions or criticism.
 
-#### Review Productrs
+#### Review Products
 
 - Review a product and give feedback
 
@@ -146,7 +146,7 @@ The following key features have been implemented thoroughout the website:
 
 #### Edit and Delete Reviews 
 
-- Enables users and certified users to edit an delete reviews as they see fit.
+- Enables users and certified users to edit and delete reviews as they see fit.
 
 ### Wireframes
 
@@ -174,10 +174,10 @@ The developer chose to only use two fonts as it will be easy to manage and keep 
 
 #### Colors 
 
-A light simple theme has been chosen for the websit, as you can see this varies massively form the wireframes due to feedback from the developer's mentor, as the wireframes looked like old early 90's websites and it was better to go for a more minimalistic modern look. This compliments greatly as there is no target age demographic and the site expects to recieve visits from all age groups. 
+A light simple theme has been chosen for the website, as you can see thess varie massively form the wireframes due to feedback from the developer's mentor, as the wireframes looked like old early 90's websites and it was better to go for a more minimalistic modern look. This compliments greatly as there is no target age demographic and the site expects to receive visits from all age groups. 
 
 ## Technologies 
-### Itegrated Development Enviroment 
+### Integrated Development Enviroment 
 - [GitHub](https://github.com) 
 ### Languages 
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) 
@@ -241,10 +241,7 @@ The shops code base has been developed using the **Django** framework, and is ma
 ### Home Models - 
 ![Wireframe of the website](media/README/home-page.png)
 
-The **Home Model** is simply used to display the home page of the website. It is the first thing User's see when navigating thorough the website so it connects all the models together in one page. 
-
-
-
+The **Home Model** is simply used to display the home page of the website. It is the first thing User's see when navigating through the website so it connects all the models together in one page. 
 
 ### Products Models - 
 
@@ -304,7 +301,7 @@ The **Checkout** module is used to display and input a users information and cre
 
 ![Wireframe of the website](media/README/profile-page.png)
 
-The **Profiles** module is used to register new users and for current users to log into their account. The profiles app is used to allow the user to not only access their own informatin aswell as past order history but also to allow registered users to access specific features such as the Review Forms. The Profiles Form allows the user to save and edit their personal information.
+The **Profiles** module is used to register new users and for current users to log into their account. The profiles app is used to allow the user to not only access their own information aswell as past order history but also to allow registered users to access specific features such as the Review Forms. The Profiles Form allows the user to save and edit their personal information.
 
 ## Features Implemented 
 Most of the features implemented do not require the need to create an account, but there are certain features that do require the need to create an account. 
@@ -323,14 +320,14 @@ Features included in the Base template include:
 
 - The **Footer** includes a footer tagline and social media links. 
 
-- **Social Media Links** since this is not a real store the socia media buttons do not link to any related **big 3** specific pages they just link to the home pages of the respective social medias. 
+- **Social Media Links** since this is not a real store the social media buttons do not link to any related **big 3** specific pages they just link to the home pages of the respective social medias. 
 
-- The **Contact** form can be accessed form the **User Menu**. It enables the user to contact the store owners with concerns and suggestions via email.
+- The **Contact** form can be accessed from the **User Menu**. It enables the user to contact the store owners with concerns and suggestions via email.
 
     ![Display of the Website](media/README/contact-page.png)
 
 - **User Authentication System** is implemented using [django-allauth](https://django-allauth.readthedocs.io/en/latest/index.html). 
-    - The **Log In**, enables the user to log into their existing account is is followed by a forgot password incase the user needs a password recovery aswell as a Remember Me button that will save the users information for the next time they Log in.
+    - The **Log In**, enables the user to log into their existing account is followed by a forgot password button incase the user needs a password recovery aswell as a Remember Me button that will save the users information for the next time they Log in.
 
         ![Display of the Website](media/README/signin-page.png)
 
@@ -342,15 +339,15 @@ Features included in the Base template include:
 
         ![Display of the Website](media/README/signout-page.png)
 
-- **Password Reset** allows the user to reset their forgotten password an authentication will be sent via email. The user will then be able to access the change password page via the link sent to their email which will allow them to change their password.
+- **Password Reset** allows the user to reset their forgotten password and authentication will be sent via email. The user will then be able to access the change password page via the link sent to their email which will allow them to change their password.
 
-- The **Products** display all the products available. Products can be searched using the **Product Search** feature. If the user is looking for a more broad seach the **Product Categories** will allow them to sort the products by categories and even by specific anime in case they're only looking for products from a specific Anime. 
+- The **Products** display all the products available. Products can be searched using the **Product Search** feature. If the user is looking for a more broad search the **Product Categories** will allow them to sort the products by categories and even by specific anime in case they're only looking for products from a specific Anime. 
 
 - The **Product Details** contains the image of a product as well as the product description, rating, and price. It also contains buttons to choose the quantity and the sizes depending on the product. 
 
 - **Customer Reviews**, displays the reviews for the specific product that is being viewed. It displays the user that submitted the review aswell as their rating of the product and their feedback. 
 
-- **Product Add, Edit, and Delete** is an exclusive feature only available for **Super Users**. It enables store owners and certified personel to add new products aswell as edit and delete existing ones. The Form is simple it contains all the necessary fields such as a Product Name, Product Image, Price, Description, and Category. 
+- **Product Add, Edit, and Delete** is an exclusive feature only available for **Super Users**. It enables store owners and certified personnel to add new products aswell as edit and delete existing ones. The Form is simple it contains all the necessary fields such as a Product Name, Product Image, Price, Description, and Category. 
 
 - **Messaging System** has been implemented with the help of **Toast Messages**. They provide feedback to the user on the top right side of the screen. 
 
@@ -381,7 +378,7 @@ The colors have been simplified to a black and white with a grey background rath
 The overall structure of the website has been changed a little to make it have a more modern look and feel to it
 some of the more noticeable changes are to the Cart, Checkout. 
 
-Cart has been slightly changed to accomodate extra functionalities and pieces of information aswell as simplify the design to make it more sleek and appealing to the eye. 
+Cart has been slightly changed to accommodate extra functionalities and pieces of information aswell as simplify the design to make it sleeker and appealing to the eye. 
 
 The Checkout page has just been simplified and we have added a few more form entries needed for the checkout process to be complete. 
 
