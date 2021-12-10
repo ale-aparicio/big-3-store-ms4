@@ -36,7 +36,7 @@ a {
 }
 
 .main-banner {
-    background: url(/media/big_3_banner.jpg) no-repeat center center fixed;
+    background: url(https://big-3-store.s3.eu-west-3.amazonaws.com/media/big_3_banner.jpg) no-repeat center center fixed;
     display: inline-block;
     width: 100%;
     min-height: 8rem;
@@ -335,19 +335,6 @@ input[name='q']::placeholder {
     .container {
       max-width: 80%;
     }
-
-    .anime-card:hover{
-        position:absolute;
-        top:-15px;
-        left:-20px;
-        width:500px;
-        height:auto;
-        display:block;
-        z-index:555;
-        transition-property: all;
-        transition-duration: 0.5s;
-        transition-timing-function: ease-in-out;
-    }
   }
   
   /* fixed top navbar only on medium and up */
@@ -360,21 +347,8 @@ input[name='q']::placeholder {
           z-index: 1030;
       }
 
-      .anime-card:hover{
-        position:absolute;
-        top:-5px;
-        left:-10px;
-        width:400px;
-        height:auto;
-        display:block;
-        z-index:555;
-        transition-property: all;
-        transition-duration: 0.5s;
-        transition-timing-function: ease-in-out;
-    }
-
     .main-banner {
-        background: url(/media/Big_3_Banner.jpg) no-repeat center center fixed;
+        background: url(https://big-3-store.s3.eu-west-3.amazonaws.com/media/Big_3_Banner.jpg) no-repeat center center fixed;
         display: inline-block;
         width: 100%;
         min-height: 15rem;
