@@ -1,6 +1,6 @@
 # Testing 
 
-![Display of the Website]()
+![Display of the Website](media/README/big-3-mockup.jpg)
 
 [View live website](https://big-3-store.herokuapp.com)
 

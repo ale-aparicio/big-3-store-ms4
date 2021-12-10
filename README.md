@@ -4,8 +4,7 @@
 
 The Big 3 Store is a website dedicated to the selling of products related to the 3 best selling shonen manga's of the 2000's. It is designed to be easily accesible from a range of devices, making it easy to navigate and browse through the different available products. 
 
-![Display of the Website]()
-
+![Display of the Website](media/README/big-3-mockup.jpg)
 ## Mission Statement ##
 
 To provide the best quality product at the most affordable price possible.
@@ -153,7 +152,15 @@ The following key features have been implemented thoroughout the website:
 
 Wireframes were made to have a clearer vision of how the website would look like. Note that the wireframe was the first vision of the website and does not reflect the current design of the website as many changes have been made due to feedback from the developer's mentor and other outside feedback such as family and friends.
 
-![Wireframe of the website]()
+![Wireframe of the website](media/README/wireframe-home.png)
+
+![Wireframe of the website](media/README/wireframe-product.png)
+
+![Wireframe of the website](media/README/wireframe-profile.png)
+
+![Wireframe of the website](media/README/wireframe-bag.png)
+
+![Wireframe of the website](media/README/wireframe-checkout.png)
 
 ### Design Choices 
 
@@ -168,8 +175,6 @@ The developer chose to only use two fonts as it will be easy to manage and keep 
 #### Colors 
 
 A light simple theme has been chosen for the websit, as you can see this varies massively form the wireframes due to feedback from the developer's mentor, as the wireframes looked like old early 90's websites and it was better to go for a more minimalistic modern look. This compliments greatly as there is no target age demographic and the site expects to recieve visits from all age groups. 
-
-![Color Pallette]()
 
 ## Technologies 
 ### Itegrated Development Enviroment 
@@ -234,13 +239,20 @@ The shops code base has been developed using the **Django** framework, and is ma
 - Profiles
 
 ### Home Models - 
+![Wireframe of the website](media/README/home-page.png)
+
 The **Home Model** is simply used to display the home page of the website. It is the first thing User's see when navigating thorough the website so it connects all the models together in one page. 
+
+
+
 
 ### Products Models - 
 
 **Product** is split up into different sections: 
 
 - **All Products** - is used to display all the products available despite their categorization. This section can be accessed through the home page.
+
+![Wireframe of the website](media/README/products-page.png)
 
 - **Products Sectioned by Categories** - is split into 3 main categories:
     - **Apparel** - used to display all apparel from all 3 anime's.
@@ -257,6 +269,8 @@ The **Home Model** is simply used to display the home page of the website. It is
     - **One Piece** - used to display all the merchandise related to the One Piece Anime.
 
 - **Product Details** is used to display a product's specifics, such as:
+
+    ![Wireframe of the website](media/README/product-detail.png)
 
     - **Product Image**
     
@@ -276,13 +290,19 @@ The **Home Model** is simply used to display the home page of the website. It is
 
 ### Bag Models - 
 
+![Wireframe of the website](media/README/bag-page.png)
+
 The **Bag** module is used to display all products a user has selected. It displays all the products information and the quantity of the product the user has selected. It leads directly into the **Checkout Module**. 
 
 ### Checkout Module - 
 
+![Wireframe of the website](media/README/checkout-page.png)
+
 The **Checkout** module is used to display and input a users information and credit information in order to make a payment. It is essential that all the information is secured as it is very sensitive and private information.
 
 ### Profiles Module - 
+
+![Wireframe of the website](media/README/profile-page.png)
 
 The **Profiles** module is used to register new users and for current users to log into their account. The profiles app is used to allow the user to not only access their own informatin aswell as past order history but also to allow registered users to access specific features such as the Review Forms. The Profiles Form allows the user to save and edit their personal information.
 
@@ -305,14 +325,22 @@ Features included in the Base template include:
 
 - **Social Media Links** since this is not a real store the socia media buttons do not link to any related **big 3** specific pages they just link to the home pages of the respective social medias. 
 
-- The **Contact** form can be accessed form the **User Menu**. It enables the user to contact the store owners with concerns and suggestions via email. 
+- The **Contact** form can be accessed form the **User Menu**. It enables the user to contact the store owners with concerns and suggestions via email.
+
+    ![Display of the Website](media/README/contact-page.png)
 
 - **User Authentication System** is implemented using [django-allauth](https://django-allauth.readthedocs.io/en/latest/index.html). 
     - The **Log In**, enables the user to log into their existing account is is followed by a forgot password incase the user needs a password recovery aswell as a Remember Me button that will save the users information for the next time they Log in.
 
+        ![Display of the Website](media/README/signin-page.png)
+
     - The **Register** link allows the user to create an account, the user will then need to verify the account by email. 
 
+        ![Display of the Website](media/README/signup-page.png)
+
     - The **Sign Out** link allows the user to sign out of their account if decide they want to use another account or in case they are logged in from a foreign device. 
+
+        ![Display of the Website](media/README/signout-page.png)
 
 - **Password Reset** allows the user to reset their forgotten password an authentication will be sent via email. The user will then be able to access the change password page via the link sent to their email which will allow them to change their password.
 
